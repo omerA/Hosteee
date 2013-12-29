@@ -83,4 +83,7 @@ module.exports = function(app, passport, auth) {
     app.get('/api/rooms/:roomId', rooms.show);
     app.put('/api/rooms/:roomId', auth.requiresLogin, auth.article.hasAuthorization, rooms.update);
     app.del('/api/rooms/:roomId', auth.requiresLogin, auth.article.hasAuthorization, rooms.destroy);
+
+    //Finish with setting up the articleId param
+    app.param('roomId', rooms.room);
 };
