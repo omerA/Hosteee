@@ -71,7 +71,10 @@ exports.destroy = function(req, res) {
  * Show a room
  */
 exports.show = function(req, res) {
-    res.jsonp(req.room);
+    //res.jsonp(req.room);
+    res.render('index', {
+       room: req.room ? JSON.stringify(req.room) : "null"
+    });
 };
 
 /**

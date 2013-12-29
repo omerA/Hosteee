@@ -1,0 +1,4 @@
+<section data-ng-controller="RoomsController" data-ng-init="findOne()">
+    <h2>{{room.name}} <a data-ng-show="global.user._id == room.user._id" href="/#!/rooms/{{room._id}}/edit">edit</a></h2>
+    <div>Up to {{room.capacity}} guests can stay in a price of {{room.price}}$ per night.</div>
+</section>
