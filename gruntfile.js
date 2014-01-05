@@ -6,27 +6,28 @@ module.exports = function(grunt) {
             jade: {
                 files: ['app/views/**'],
                 options: {
-                    livereload: true,
-                },
+                    livereload: true
+                }
             },
             js: {
                 files: ['public/js/**', 'app/**/*.js'],
                 tasks: ['jshint'],
                 options: {
-                    livereload: true,
-                },
+                    livereload: true
+                }
             },
             html: {
                 files: ['public/views/**'],
                 options: {
-                    livereload: true,
-                },
+                    livereload: true
+                }
             },
-            css: {
+            sass: {
                 files: ['public/css/**'],
                 options: {
                     livereload: true
-                }
+                },
+                tasks:['sass:dev']
             }
         },
         jshint: {
@@ -65,12 +66,20 @@ module.exports = function(grunt) {
             test: {
                 NODE_ENV: 'test'
             }
+        },
+        sass: {
+            dev: {
+                files: {
+                    'public/css/common.css' : 'public/css/common.scss'
+                }
+            }
         }
     });
 
     //Load NPM tasks 
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-mocha-test');
     grunt.loadNpmTasks('grunt-nodemon');
     grunt.loadNpmTasks('grunt-concurrent');
@@ -80,7 +89,7 @@ module.exports = function(grunt) {
     grunt.option('force', true);
 
     //Default task(s).
-    grunt.registerTask('default', ['jshint', 'concurrent']);
+    grunt.registerTask('default', ['jshint', 'sass:dev', 'concurrent']);
 
     //Test task.
     grunt.registerTask('test', ['env:test', 'mochaTest']);

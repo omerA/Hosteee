@@ -70,7 +70,7 @@ exports.destroy = function(req, res) {
 /**
  * Show a room
  */
-exports.show = function(req, res) {
+exports.show = function(req, res, id) {
     res.jsonp(req.room);
 };
 
