@@ -68,19 +68,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="config.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="48" selection-start="651" selection-end="651" vertical-scroll-proportion="0.4589372" vertical-offset="0" max-vertical-offset="621">
+            <state line="19" column="48" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="package.json" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="19" selection-start="587" selection-end="587" vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="870">
+            <state line="21" column="19" selection-start="587" selection-end="587" vertical-scroll-proportion="0.5276382" vertical-offset="0" max-vertical-offset="870">
               <folding />
             </state>
           </provider>
@@ -106,8 +106,8 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/public/js/config.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/app/views/layouts/default.jade" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -407,13 +407,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="19" selection-start="587" selection-end="587" vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="870">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/default.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="4" selection-start="0" selection-end="6" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="583">
@@ -437,7 +430,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="48" selection-start="651" selection-end="651" vertical-scroll-proportion="0.4589372" vertical-offset="0" max-vertical-offset="621">
+        <state line="19" column="48" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="19" selection-start="587" selection-end="587" vertical-scroll-proportion="0.5276382" vertical-offset="0" max-vertical-offset="870">
           <folding />
         </state>
       </provider>
