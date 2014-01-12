@@ -1,0 +1,10 @@
+<section data-ng-init="getAll()">
+    <ul>
+        <li data-ng-repeat="room in rooms">
+            <p>Room name: {{room.name}}</p>
+            <p>Room capacity: {{room.capacity}}</p>
+            <p>Room price: {{room.price}}</p>
+            <p class="hide">{{room._id}}</p>
+        </li>
+    </ul>
+</section>

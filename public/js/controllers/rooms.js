@@ -52,4 +52,8 @@ angular.module('mean.rooms').controller('RoomsController', ['$scope', '$routePar
             $scope.room = room;
         });
     };
+
+    $scope.getAll = function() {
+        $scope.rooms = Rooms.query()
+    }
 }]);

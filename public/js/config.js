@@ -14,6 +14,10 @@ window.app.config(['$routeProvider',
         when('/articles/:articleId', {
             templateUrl: 'views/articles/view.html'
         }).
+        when('/rooms', {
+            templateUrl: 'views/rooms/index.html',
+            controller: 'RoomsController'
+        }).
         when('/rooms/:roomId', {
             templateUrl: 'views/rooms/view.html',
             controller: 'RoomsController'
