@@ -46,7 +46,7 @@ angular.module('mean.rooms').controller('RoomsController', ['$scope', '$routePar
     };
 
     $scope.findOne = function() {
-        rooms.get({
+        Rooms.get({
             roomId: $routeParams.roomId
         }, function(room) {
             $scope.room = room;
