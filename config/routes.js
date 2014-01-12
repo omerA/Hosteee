@@ -80,7 +80,7 @@ module.exports = function(app, passport, auth) {
     app.get('/api/rooms', rooms.all);
     app.post('/api/rooms', rooms.create);
 //    app.post('/api/rooms', auth.requiresLogin, rooms.create);
-    app.get('/rooms/:roomId', rooms.show);
+    app.get('/api/rooms/:roomId', rooms.show);
 //    app.put('/api/rooms/:roomId', auth.requiresLogin, auth.article.hasAuthorization, rooms.update);
 //    app.del('/api/rooms/:roomId', auth.requiresLogin, auth.article.hasAuthorization, rooms.destroy);
 //TODO reactivate authz/authn

@@ -10,7 +10,7 @@ angular.module('mean.rooms').controller('RoomsController', ['$scope', '$routePar
             content: this.content
         });
         room.$save(function(response) {
-            $location.path("rooms/" + response._id);
+            $location.path("api/rooms/" + response._id);
         });
 
         this.title = "";
