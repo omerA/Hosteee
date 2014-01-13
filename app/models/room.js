@@ -23,7 +23,12 @@ var RoomSchema = new Schema({
     price: {
         type: Number,
         default: 0
-    }
+    },
+
+    images: [{
+        url: String,
+        caption: String
+    }]
 });
 
 /**
