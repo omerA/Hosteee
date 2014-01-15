@@ -10,6 +10,9 @@ lib-cov
 *.out
 *.pid
 *.gz
+bower_components/
+node_modules/
+.idea/
 
 pids
 logs
