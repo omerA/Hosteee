@@ -35,13 +35,12 @@ module.exports = function(grunt) {
         },
         nodemon: {
             dev: {
+                script: 'server.js',
                 options: {
-                    file: 'server.js',
                     args: [],
-                    ignoredFiles: ['README.md', 'node_modules/**', '.DS_Store'],
-                    watchedExtensions: ['js'],
-                    watchedFolders: ['app', 'config'],
-                    debug: true,
+                    ignore: ['README.md', 'node_modules/**', '.DS_Store'],
+                    ext: 'js',
+                    watch: ['app', 'config'],
                     delayTime: 1,
                     env: {
                         PORT: 3000
@@ -51,7 +50,7 @@ module.exports = function(grunt) {
             }
         },
         concurrent: {
-            tasks: ['nodemon', 'watch'], 
+            tasks: ['nodemon', 'watch'],
             options: {
                 logConcurrentOutput: true
             }
