@@ -29,7 +29,7 @@ TBD
 
 ## Contributors
 
-<a href="//twitter.com/omeramsel">@omera</a></br>
+<a href="//twitter.com/omeramsel">@omera</a><br>
 <a href="//twitter.com/orrgottl">@orrgottl</a>
 
 ## License
