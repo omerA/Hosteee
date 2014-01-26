@@ -86,4 +86,16 @@ module.exports = function(app, passport, auth) {
 //TODO reactivate authz/authn
     //Finish with setting up the articleId param
     app.param('roomId', rooms.room);
+
+    // Reservations Routes
+    var reservations = require('../app/controllers/reservation');
+    app.get('/api/reservations', reservations.all);
+    app.post('/api/reservations', reservations.create);
+//    app.post('/api/reservations', auth.requiresLogin, reservations.create);
+    app.get('/api/reservations/:reservationId', reservations.show);
+//    app.put('/api/reservations/:reservationId', auth.requiresLogin, auth.article.hasAuthorization, reservations.update);
+//    app.del('/api/reservations/:reservationId', auth.requiresLogin, auth.article.hasAuthorization, reservations.destroy);
+//TODO reactivate authz/authn
+    //Finish with setting up the reservationId param
+    app.param('reservationId', reservations.reservation);
 };
